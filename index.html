@@ -69,7 +69,7 @@
         <button id="no">Nie</button>
     </div>
     <div id="fireworks">
-        <h1 style="color: white;">Dziękuję! 💖</h1>
+        <h1 style="color: white;">LOW JU BBY 💖</h1>
         <div id="hearts-container"></div>
     </div>
     <script>
@@ -93,15 +93,9 @@
         });
 
         noButton.addEventListener('click', () => {
-            noButton.disabled = true;
-            noButton.textContent = 'Na pewno?';
             noButton.style.position = 'absolute';
             noButton.style.top = Math.random() * 80 + 'vh';
             noButton.style.left = Math.random() * 80 + 'vw';
-            setTimeout(() => {
-                noButton.disabled = false;
-                noButton.textContent = 'Nie';
-            }, 3000);
         });
     </script>
 </body>
