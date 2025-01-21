@@ -80,6 +80,8 @@
 
         yesButton.addEventListener('click', () => {
             fireworks.style.display = 'flex';
+            yesButton.style.display = 'none';
+            noButton.style.display = 'none';
             for (let i = 0; i < 50; i++) {
                 const heart = document.createElement('div');
                 heart.className = 'heart';
@@ -93,6 +95,9 @@
         noButton.addEventListener('click', () => {
             noButton.disabled = true;
             noButton.textContent = 'Na pewno?';
+            noButton.style.position = 'absolute';
+            noButton.style.top = Math.random() * 80 + 'vh';
+            noButton.style.left = Math.random() * 80 + 'vw';
             setTimeout(() => {
                 noButton.disabled = false;
                 noButton.textContent = 'Nie';
